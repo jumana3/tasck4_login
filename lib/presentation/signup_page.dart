@@ -8,7 +8,8 @@ class signupPage extends StatefulWidget {
 }
 
 class _signupPageState extends State<signupPage> {
-
+  
+  final emailControler = TextEditingController();
   final textControler = TextEditingController();
   final passControler = TextEditingController();
   final formKey = GlobalKey<FormState>();
@@ -131,7 +132,7 @@ class _signupPageState extends State<signupPage> {
                       SizedBox(height: 10),
                       Container(
                         child: TextFormField(
-                          controller: textControler,
+                          controller: emailControler,
                           maxLines: 1,
                           cursorColor: Colors.grey,
                           cursorWidth: 3,
